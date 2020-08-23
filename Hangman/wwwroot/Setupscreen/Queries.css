@@ -1,0 +1,99 @@
+@media (min-width: 800px){
+    #setup-screen{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #setup-screen .img img{
+        width: 400px;
+        height: auto;
+    }
+    #setup-screen .text{
+        grid-gap: 20px;
+        padding-bottom: 50px;
+    }
+    #setup-screen .text h1{
+        margin: 15px;
+        font-size: 30pt;
+        color: #222222;
+    }
+    #setup-screen h1{
+        margin: 10px;
+        font-size: 30pt;
+    }
+    #setup-screen .text span{
+        padding: 5px;
+        font-size: 20pt;
+        transition: 1s;
+    }
+    #setup-screen .text span:hover{
+        font-size: 24pt;
+    }
+}
+@media (min-width: 1200px){
+    #setup-screen{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    #setup-screen .img img{
+        width: 500px;
+        height: auto;
+    }
+    #setup-screen .text{
+        grid-gap: 20px;
+        padding-bottom: 50px;
+    }
+    #setup-screen .text h1{
+        margin: 15px;
+        font-size: 40pt;
+        color: #222222;
+    }
+    #setup-screen h1{
+        margin: 10px;
+        font-size: 40pt;
+    }
+    #setup-screen .text span{
+        padding: 5px;
+        font-size: 25pt;
+        transition: 1s;
+    }
+    #setup-screen .text span:hover{
+        font-size: 28pt;
+    }
+}
+@media (min-width: 1400px){
+   #setup-screen{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    #setup-screen .img img{
+        width: 600px;
+        height: auto;
+    }
+    #setup-screen .text{
+        grid-gap: 20px;
+        padding-bottom: 50px;
+    }
+    #setup-screen .text h1{
+        margin: 15px;
+        font-size: 50pt;
+        color: #222222;
+    }
+    #setup-screen h1{
+        margin: 20px;
+        font-size: 50pt;
+    }
+    #setup-screen .text span{
+        padding: 5px;
+        font-size: 30pt;
+        transition: 1s;
+        border: #760e08 7px solid;
+    }
+    #setup-screen .text span:hover{
+        font-size: 34pt;
+        border: white 7px solid;
+    }
+}

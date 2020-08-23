@@ -1,0 +1,21 @@
+﻿@page
+@using Models
+@model Hangman.LeaderboardModel
+@{
+    ViewData["Title"] = "Leaderboard";
+}
+
+<h1>Leaderboard</h1>
+<table style="border: 1px solid black; width: 30%;">
+    <tr>
+        <th>User</th>
+        <th>Word</th>
+    </tr>
+    @foreach (WordUserName WU in Model.WordUsers)
+    {
+            <tr>
+            <th>@WU.User</th>
+            <th>@WU.Word</th>
+            </tr>
+    }
+</table>

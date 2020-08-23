@@ -1,0 +1,100 @@
+@media (min-width: 800px){
+    #open-screen{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #open-screen .img img{
+        width: 400px;
+        height: auto;
+    }
+    #open-screen .text{
+        font-size: 20pt;
+        padding-bottom: 50px;
+    }
+    #open-screen .text h1{
+        margin: 15px;
+        font-size: 50pt;
+        color: #222222;
+    }
+    #open-screen .text p{
+        margin: 10px;
+    }
+    #open-screen .text a{
+        color: #222222;
+        font-size: 22pt;
+    }
+    #open-screen .text h2{
+        margin: 20px;
+        padding-bottom: 10px;
+        font-size: 35pt;
+    }
+    #open-screen .text h2 a{
+        font-size: 40pt;
+        color: #760e08;
+        padding-bottom: 50px;
+    }
+    #open-screen .text span{
+        padding: 5px;
+        font-size: 22pt;
+        transition: 1s;
+    }
+    #open-screen .text span:hover{
+        font-size: 24pt;
+    }
+}
+@media (min-width: 1200px){
+     #open-screen{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    #open-screen .img img{
+        width: 600px;
+        height: auto;
+    }
+    #open-screen .text{
+        font-size: 30pt;
+        padding-bottom: 50px;
+    }
+    #open-screen .text h1{
+        margin: 15px;
+        font-size: 60pt;
+        color: #222222;
+    }
+    #open-screen .text p{
+        margin: 10px;
+    }
+    #open-screen .text a{
+        color: #222222;
+        font-size: 32pt;
+    }
+    #open-screen .text h2{
+        margin: 20px;
+        padding-bottom: 10px;
+        font-size: 40pt;
+    }
+    #open-screen .text h2 a{
+        font-size: 42pt;
+        color: #760e08;
+        padding-bottom: 50px;
+    }
+    #open-screen .text span{
+        padding: 5px;
+        font-size: 30pt;
+        transition: 1s;
+    }
+    #open-screen .text span:hover{
+        font-size: 32pt;
+    }
+}
+@media (min-width: 1400px){
+    #open-screen .text{
+        padding-right: 100px;
+    }
+    #open-screen .text p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

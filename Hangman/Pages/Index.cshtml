@@ -1,0 +1,59 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Hang-man</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/Openscreen/Openscreen.css" />
+    <link rel="stylesheet" href="~/Openscreen/Queries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <section id="open-screen">
+        <div class="img">
+            <img src="~/Openscreen/Img/HM-complete.svg" alt="Complete HangMan">
+        </div>
+        <div class="text">
+            <h1>HANGMAN</h1>
+            <p>Zvládneš přežít, nebo se budeš houpat na šibenici?</p>
+            <h2>Máš <a>8</a> životů...</h2>
+            @if (Model.User.Identity.IsAuthenticated)
+            {
+                <p style="font-size:20px;color:lightgrey;">Přihlášený:</p>
+                <p style="font-size:20px;color:darkred;">@User.Identity.Name</p>
+                <a asp-page="Setupscreen">
+                    <span>Klikni zde</span>
+                </a>
+                <br />
+                <a asp-page="Leaderboard">
+                    <span>List dokončených slov</span>
+                </a>
+                <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("index", new { area = "" })" method="post">
+                    <button style="background:none; border:none; margin:0; padding:0;" type="submit"><span>Odhlásit se</span></button>
+                </form>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">
+                    <span>Přihlásit se</span>
+                </a>
+                <br />
+                <a asp-area="Identity" asp-page="/Account/Register">
+                    <span>Registrovat se</span>
+                </a>
+
+            }
+        </div>
+        
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿@page
+@model Hangman.LosescreenModel
+@{
+    ViewData["Title"] = "Losescreen";
+}
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Hang-man</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/End-screen-loose/Openscreen.css" />
+    <link rel="stylesheet" href="~/End-screen-loose/Queries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="open-screen">
+        <div class="text">
+            <h1>HANGMAN</h1>
+            <p>Byl jsi <a>OBĚŠEN</a></p>
+        </div>
+        <div class="img">
+            <img src="~/End-screen-loose/Img/HM-all-loose.svg" alt="Loose HangMan">
+        </div>
+        <div class="text">
+            <h1>KONEC HRY</h1>
+            <p>Slovo bylo:</p>
+            <p style="color:darkred;">@Model.Word</p>
+            <a asp-page="index">
+                <span>Restartovat</span>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
+

@@ -1,0 +1,96 @@
+html{
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#Game-screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(Img/Background-forest.jpg);
+}
+#Game-screen h1{
+    margin: 10px;
+    font-size: 22pt;
+    color: #222222;
+}
+#Game-screen .text{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+#Game-screen .text h1{
+    margin: 10px;
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
+    font-size: 22pt;
+    color: white;
+}
+#Game-screen .text .letters{
+    margin-top: 20px;
+    color: white;
+}
+.letters a {
+    font-size: 20pt;
+}
+#Game-screen .text footer h2{
+    font-size: 15pt;
+    color: white;
+}
+#Game-screen .text footer a{
+    font-size: 20pt;
+    color: #760e08;
+    margin: 5px;
+}
+#Game-screen .img{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+}
+#Game-screen .img img{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+#Game-screen .text span{
+    color: white;
+    border: #760e08 5px solid;
+    border-radius: 10%;
+    padding: 5px;
+    font-size: 14pt;
+    cursor: pointer;
+    transition: 1s;
+}
+#Game-screen .text span:hover{
+    font-size: 15pt;
+    border: white 5px solid;
+    color: #760e08; 
+}
+#Game-screen .text input{
+    font-size: 15pt;
+    color: #222222;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin: 20px;
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+#Game-screen .text input:focus{
+    border-color: #760e08;
+    box-shadow: 0 0 8px 0 #760e08;
+}

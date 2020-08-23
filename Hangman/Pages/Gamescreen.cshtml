@@ -1,0 +1,53 @@
+﻿@page
+@model Hangman.GamescreenModel
+@{
+    ViewData["Title"] = "Gamescreen";
+}
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Hang-man</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/Gamescreen/Gamescreen.css" />
+    <link rel="stylesheet" href="~/Gamescreen/Queries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="Game-screen">
+        <div class="img">
+            @if (Model.livesLeft == "HM-8life.svg")
+            {
+
+            }
+            else 
+            { 
+            <img src="~/Gamescreen/Img/@Model.livesLeft" alt="E">
+            }
+        </div>
+        <div class="text">
+            <h1>@Model.category</h1>
+            <div class="letters">
+            @foreach(char i in Model.currentWord)
+            {
+                <a>@i</a>
+            }
+            </div>
+            <form method="post">
+                <input type="text" placeholder="Zde napiš písmeno" id="letter" name="letter">
+                <input type="submit" value="Potvrdit">
+            </form>
+            <footer>
+                <h2>JIŽ HÁDANÁ PÍSMENA</h2>
+                @foreach (char x in Model.wrongLetters)
+                {
+                    <a>@x</a>
+                }
+            </footer>
+        </div>
+        
+    </section>
+</body>
+</html>
+

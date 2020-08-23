@@ -1,0 +1,42 @@
+﻿@page
+@model Hangman.SetupscreenModel
+@{
+    ViewData["Title"] = "Setupscreen";
+}
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Hang-man</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/Setupscreen/Setupscreen.css" />
+    <link rel="stylesheet" href="~/Setupscreen/Queries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="setup-screen">
+        <div class="img">
+            <h1>TVŮJ OBĚŠENEC</h1>
+            <img src="~/Setupscreen/Img/HM-all.svg" alt="all HangMan">
+        </div>
+        <div class="text">
+            <h1>KATEGORIE SLOV</h1>
+            <a asp-page="Gamescreen" asp-page-handler="animals">
+                <span>ZVÍŘATA</span>
+            </a>
+            <a asp-page="Gamescreen" asp-page-handler="vehicles">
+                <span>VOZIDLA</span>
+            </a>
+            <a asp-page="Gamescreen" asp-page-handler="supplies">
+                <span>ŠKOLNÍ POTŘEBY</span>
+            </a>
+            <a asp-page="Gamescreen" asp-page-handler="cities">
+                <span>MĚSTA</span>
+            </a>
+</div>
+    </section>
+
+</body>
+</html>
+

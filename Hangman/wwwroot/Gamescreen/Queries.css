@@ -1,0 +1,78 @@
+@media (min-width: 800px){
+    #Game-screen .text{
+        height: 80%;
+        width: 50%;
+        top: 15%;
+        left: 50%;
+    }
+    #Game-screen .text h1{
+        font-size: 28pt;
+    }
+    .letters a, .text footer a {
+        font-size: 25pt;
+    }
+    #Game-screen .text footer h2{
+        font-size: 21pt;
+        color: white;
+    }
+    #Game-screen .text input{
+         font-size: 21pt;   
+    }
+    #Game-screen .img{
+        height: 100%;
+        width: 50%;
+        left: 0;
+    }
+    #Game-screen .img img{
+        top: 10%;
+    }
+   
+}
+@media (min-width: 1200px){
+     #Game-screen .text h1{
+        font-size: 32pt;
+    }
+    .letters{
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .letters a {
+        font-size: 25pt;
+        margin: 10px;
+    }
+    #Game-screen .text footer a{
+        font-size: 25pt;
+    }
+    #Game-screen .text footer h2{
+        font-size: 28pt;
+        color: white;
+    }
+    #Game-screen .text input{
+         font-size: 25pt;   
+    }
+    
+}
+@media (min-width: 1400px){
+     #Game-screen .text h1{
+        font-size: 40pt;
+    }
+    .letters{
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .letters a {
+        font-size: 32pt;
+        margin: 10px;
+    }
+    #Game-screen .text footer a{
+        font-size: 32pt;
+    }
+    #Game-screen .text footer h2{
+        font-size: 28pt;
+        color: white;
+    }
+    #Game-screen .text input{
+         font-size: 28pt;   
+    }
+   
+}

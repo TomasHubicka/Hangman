@@ -1,0 +1,60 @@
+html{
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#setup-screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(Img/Background-forest.jpg);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#setup-screen h1{
+    margin: 10px;
+    font-size: 22pt;
+    color: #222222;
+}
+#setup-screen .text{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 50px;
+}
+#setup-screen .text h1{
+    margin: 10px;
+    font-size: 22pt;
+    color: white;
+}
+#setup-screen .img{
+    text-align: center;
+    margin-top: 20px;
+}
+#setup-screen .img img{
+    width: 200px;
+    height: auto;
+}
+#setup-screen .text span{
+    color: white;
+    border: #760e08 5px solid;
+    border-radius: 10%;
+    padding: 5px;
+    font-size: 14pt;
+    cursor: pointer;
+    transition: 1s;
+}
+#setup-screen .text span:hover{
+    font-size: 15pt;
+    border: white 5px solid;
+    color: #760e08; 
+}
+
+
